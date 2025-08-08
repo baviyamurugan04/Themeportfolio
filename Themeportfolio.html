@@ -1,0 +1,241 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Baviya M — Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root{
+      --bg: #ffffff;
+      --text: #111827;
+      --muted: #6b7280;
+      --card: #f8fafc;
+      --accent: #0d6efd;
+      --glass: rgba(13,110,253,0.06);
+    }
+    [data-theme="dark"]{
+      --bg: #0b1220;
+      --text: #e6eef8;
+      --muted: #9aa6b2;
+      --card: #071024;
+      --accent: #66a6ff;
+      --glass: rgba(102,166,255,0.08);
+    }html,body{
+  height:100%;
+  background:var(--bg);
+  color:var(--text);
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+.navbar{
+  background:linear-gradient(90deg, rgba(255,255,255,0.02), transparent);
+  backdrop-filter: blur(6px);
+}
+
+.card-custom{
+  background:var(--card);
+  border: 1px solid rgba(0,0,0,0.04);
+  box-shadow: 0 6px 20px rgba(2,6,23,0.06);
+}
+
+.accent{
+  color:var(--accent);
+}
+
+.theme-toggle{
+  cursor:pointer;
+}
+
+.hero{
+  padding:3rem 0;
+}
+
+.contact a{color:var(--text); text-decoration:none}
+.muted{color:var(--muted)}
+
+/* Responsive tweaks */
+@media (min-width: 992px){
+  .hero-row{align-items:center}
+}
+
+/* small utilities */
+.chip{display:inline-block;padding:.25rem .6rem;border-radius:999px;background:var(--glass);font-size:.85rem}
+
+/* project card image placeholder */
+.project-thumb{height:140px;background:linear-gradient(135deg,var(--glass),transparent);border-radius:.5rem}
+
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg py-3">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">BAVIYA M</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button><div class="collapse navbar-collapse" id="navMenu">
+    <ul class="navbar-nav ms-auto align-items-lg-center">
+      <li class="nav-item mx-2"><a class="nav-link" href="#about">About</a></li>
+      <li class="nav-item mx-2"><a class="nav-link" href="#projects">Projects</a></li>
+      <li class="nav-item mx-2"><a class="nav-link" href="#skills">Skills</a></li>
+      <li class="nav-item mx-2"><a class="nav-link" href="#contact">Contact</a></li>
+      <li class="nav-item mx-2">
+        <button id="themeBtn" class="btn btn-sm btn-outline-secondary theme-toggle" aria-label="Toggle theme">🌙</button>
+      </li>
+    </ul>
+  </div>
+</div>
+
+  </nav>  <main class="container py-5">
+    <header class="hero">
+      <div class="row hero-row">
+        <div class="col-lg-8">
+          <h1 class="display-6 fw-bold">Hi, I'm <span class="accent">Baviya M</span></h1>
+          <p class="lead muted">Computer Science & Business Systems student — building web apps, data projects, and learning full-stack development.</p><p class="mt-4 contact">
+        <a href="mailto:baviyamurugan04@gmail.com">baviyamurugan04@gmail.com</a> • +91 8148791529
+      </p>
+
+      <p class="mt-3">
+        <a class="btn btn-primary btn-sm me-2" href="#projects">See projects</a>
+        <a class="btn btn-outline-secondary btn-sm" href="https://github.com/baviyamurugan04" target="_blank">Github</a>
+      </p>
+    </div>
+    <div class="col-lg-4 mt-4 mt-lg-0">
+      <div class="card card-custom p-3">
+        <h6 class="mb-2">Quick Info</h6>
+        <p class="mb-1"><strong>Education:</strong> Kingston Engineering College — B.Tech (CSE-Business Systems)</p>
+        <p class="mb-1"><strong>Internship:</strong> Flash Infolabs — Full Stack Web Dev (Sep 2024)</p>
+        <p class="mb-1"><strong>Languages:</strong> Python, Java</p>
+        <p class="mb-0 muted small">Open to internships • Available for remote/onsite</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="about" class="mb-5">
+  <div class="card card-custom p-4">
+    <h5>Objective</h5>
+    <p>Motivated and dedicated college student seeking internship opportunities to apply academic knowledge and develop practical skills. Eager to contribute to a dynamic team and gain hands-on experience.</p>
+
+    <div class="row mt-3">
+      <div class="col-md-6">
+        <h6>Education</h6>
+        <ul>
+          <li>Sneha Deepam Matric Hr Sec School — 73% (2019–2020)</li>
+          <li>Sunbeam Senior Secondary School — 69.3% (2021–2022)</li>
+          <li>Kingston Engineering College — B.Tech (2022–2026)</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h6>Tools & Platforms</h6>
+        <p class="mb-1">Jupyter Notebook, MySQL, UiPath Studio, R Studio, IDLE</p>
+        <h6 class="mt-3">Soft skills</h6>
+        <p class="mb-0">Problem-solving · Time Management · Communication · Teamwork</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="mb-5">
+  <h5 class="mb-3">Projects</h5>
+  <div class="row g-3">
+    <div class="col-md-6">
+      <div class="card card-custom p-3 h-100">
+        <div class="project-thumb mb-3"></div>
+        <h6>Hospital Management Hub</h6>
+        <p class="muted small">HTML, CSS, JavaScript, React, Node.js, MongoDB</p>
+        <p>Managed patient records, appointments, billing and staff details. Implemented role-based access and real-time updates.</p>
+        <a href="#" class="small">View on Github</a>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="card card-custom p-3 h-100">
+        <div class="project-thumb mb-3"></div>
+        <h6>Smart Traffic Diversion System</h6>
+        <p class="muted small">IoT, Sensors, Camera feed, Routing algorithms</p>
+        <p>IoT solution that uses real-time sensor and camera data to adjust signals dynamically and suggest alternate routes to reduce congestion.</p>
+        <a href="#" class="small">View on Github</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="mb-5">
+  <div class="card card-custom p-4">
+    <h6>Skills</h6>
+    <div class="row">
+      <div class="col-md-6">
+        <p><strong>Languages:</strong> Python, Java</p>
+        <p><strong>Tools:</strong> Word, PowerPoint, Excel, Notepad</p>
+      </div>
+      <div class="col-md-6">
+        <p><strong>Platforms:</strong> Jupyter Notebook, MySQL, UiPath Studio, R Studio</p>
+        <p><strong>Certifications:</strong> Google Cloud Data Analyst, Python Programming (EXCELR), Deep Learning (Infosys), Prompt Engineering (Infosys), JAVA (NPTEL)</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="internship" class="mb-5">
+  <div class="card card-custom p-4">
+    <h6>Internship</h6>
+    <p><strong>Flash Infolabs</strong> — Full Stack Web Development (16 Sep 2024 – 30 Sep 2024)</p>
+    <p>Worked on responsive web apps using React.js and Node.js. Implemented RESTful APIs, optimized DB queries, participated in Agile workflow and code reviews.</p>
+  </div>
+</section>
+
+<section id="contact" class="mb-5">
+  <div class="card card-custom p-4">
+    <h6>Contact & Links</h6>
+    <p class="mb-1">Email: <a href="mailto:baviyamurugan04@gmail.com">baviyamurugan04@gmail.com</a></p>
+    <p class="mb-1">Phone: +91 8148791529</p>
+    <p class="mb-1">LinkedIn: <a href="https://www.linkedin.com/in/baviya-m-b59b60295" target="_blank">linkedin.com/in/baviya-m-b59b60295</a></p>
+    <p class="mb-1">GitHub: <a href="https://github.com/baviyamurugan04" target="_blank">github.com/baviyamurugan04</a></p>
+    <p class="mb-1">Hackerrank: <a href="https://www.hackerrank.com/profile/baviyamurugan04" target="_blank">hackerrank.com/profile/baviyamurugan04</a></p>
+  </div>
+</section>
+
+<footer class="text-center muted small py-3">© <span id="year"></span> Baviya M — Built with ❤️ • Light/Dark theme</footer>
+
+  </main>  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>  <script>
+    // Theme handling
+    const root = document.documentElement;
+    const themeBtn = document.getElementById('themeBtn');
+    const stored = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const initial = stored || (prefersDark ? 'dark' : 'light');
+    setTheme(initial);
+
+    function setTheme(t){
+      if(t === 'dark'){
+        document.documentElement.setAttribute('data-theme','dark');
+        themeBtn.textContent = '☀️';
+      }else{
+        document.documentElement.removeAttribute('data-theme');
+        themeBtn.textContent = '🌙';
+      }
+      localStorage.setItem('theme', t);
+    }
+
+    themeBtn.addEventListener('click', () => {
+      const cur = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+      setTheme(cur === 'dark' ? 'light' : 'dark');
+    });
+
+    // Set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Small enhancement: smooth scroll for nav links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        e.preventDefault();
+        const t = document.querySelector(a.getAttribute('href'));
+        if(t) t.scrollIntoView({behavior:'smooth', block:'start'});
+      })
+    })
+  </script></body>
+</html>
